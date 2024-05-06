@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Adjusted height of the logo */
+    margin-bottom: 5px;
+}
+
+.logo-text {
+        font-size: 1rem;
+        color: #e51636; /* Set color to red */
+}
+
+.nav-wrapper {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+}
+
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    margin: 20px auto;
+}
+
+.main-news {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.main-news .news-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.side-news {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-news-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.side-news-item .side-news-image {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    margin-right: 10px;
+}
+
+.side-news-text {
+    align-self: center;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-nav li {
+    margin: 0 10px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-nav a:hover {
+    color: #e51636;
+}
