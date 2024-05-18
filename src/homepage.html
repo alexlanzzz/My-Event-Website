@@ -9,15 +9,16 @@
 <body>
     <div class="header">
         <div class="logo">
-            <img src="images/logo.jpg" alt="RogEsports.com">
-            <div class="logo-text">RogEsport.com</div>
+            <a href="homepage.html">
+                <img src="images/logo.jpg" alt="RogEsports.com">
+                <div class="logo-text">RogEsport.com</div>
+            </a>
         </div>
         <div class="nav-wrapper">
             <div class="nav">
-                <a href="index.html">Home</a>
+                <a href="homepage.html">Home</a>
                 <a href="showcase.html">Game Showcase</a>
                 <a href="community.html">Community</a>
-                <a href="news.html">News</a>
                 <a href="gallery.html">Articles Gallery</a>
                 <a href="about.html">About Us</a>
                 <a href="register.html">Register</a>
@@ -32,23 +33,23 @@
             <a href="#">DOTA 2</a>
             <a href="#">Call of Duty</a>
             <a href="#">VALORANT</a>
-            <a href="#">Indie Game</a>
         </div>
     </div>
-    <div class="content">
-        <div class="main-news">
-            <h2>Latest News</h2>
-            <div class="news-slider" aria-label="News Slider">
-                <button class="prev" aria-label="Previous Slide"></button>
+    <main class="content" role="main">
+        <section class="main-news" aria-labelledby="latest-news-heading">
+            <h2 id="latest-news-heading">Latest News</h2>
+            <div class="news-slider">
+                <button class="prev" aria-label="Previous News"></button>
                 <div class="slides-container">
                     <img src="images/news.png" alt="News headline 1">
-                    <img src="images/news2.png" alt="News headline 2">
-                    <img src="images/news3.png" alt="News headline 3">
+                    <img src="images/news.png" alt="News headline 2">
+                    <img src="images/news.png" alt="News headline 3">
                 </div>
-                <button class="next" aria-label="Next Slide"></button>
+                <button class="next" aria-label="Next News"></button>
             </div>
-        </div>
-        <div class="side-news">
+        </section>
+        <aside class="side-news" role="complementary" aria-labelledby="side-news-heading">
+            <h2 id="side-news-heading">Side News</h2>
             <div class="side-news-item">
                 <div class="side-news-top">
                     <div class="side-news-text">League of Legends</div>
@@ -63,18 +64,33 @@
                 </div>
                 <div class="side-news-description">A multiplayer first-person shooter developed by Valve and Hidden Path Entertainment.</div>
             </div>
-            <div class="side-news-item">
-                <div class="side-news-top">
-                    <div class="side-news-text">VALORANT</div>
-                    <img class="side-news-image" src="images/side-news3.png" alt="VALORANT">
-                </div>
-                <div class="side-news-description">A free-to-play first-person hero shooter developed and published by Riot Games.</div>
+        </aside>
+        <section class="featured-section">
+            <h2>Top games</h2>
+            
+            <p>Here is some special content that deserves attention.</p>
+        </section>
+        <section class="additional-news">
+            <h2>League of legend</h2>
+            <div class="top-games">
+                <div class="game-item">
+                    <img src="images/league of legend.png" alt="League of Legends">
+        </section>
+        <section class="Related-news">
+            <h2>Related news</h2>
+            <div class="article-item">
+                <img src="images/lol1.png" alt="Article 1">
+                <p>Doublelift calls out LCS players who don't use Champions Queue to practice</p>
             </div>
-        </div>
-    </div>
-    <div class="footer">
+            <div class="article-item">
+                <img src="images/lol2.png" alt ="Article 2">
+                <p>The 5 best midlaners for season 12 solo queue</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" role="contentinfo">
         <div class="footer-logo">RogEsports.com</div>
-        <nav class="footer-nav">
+        <nav class="footer-nav" aria-label="Footer Navigation">
             <ul>
                 <li><a href="#">Follow us</a></li>
                 <li><a href="#">Facebook</a></li>
@@ -82,7 +98,7 @@
                 <li><a href="#">Instagram</a></li>
             </ul>
         </nav>
-    </div>
+    </footer>
     <script src="js/site_interactions.js"></script>
 </body>
 </html>
