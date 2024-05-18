@@ -1,8 +1,7 @@
 // Slide navigation logic
 // site_interactions.js
-
 let currentSlide = 0;
-const slides = document.querySelectorAll('.slides-container img');
+const slides = document.querySelectorAll('.slides-container .slide'); // Selecting slide instead of img
 const totalSlides = slides.length;
 let slideInterval;
 

@@ -1,4 +1,3 @@
-/* General styles for the body, sets font and removes default margins and paddings. */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -102,7 +101,6 @@ body {
     align-items: start;
 }
 
-
 .main-news, .side-news {
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -116,6 +114,41 @@ body {
     grid-column: 1 / -1; /* Ensure full width */
 }
 
+.featured-section h2 {
+    font-size: 2rem; /* 示例大小，您可以根据需要调整 */
+    color: #333; /* 可以调整颜色 */
+    font-weight: bold; /* 加粗字体 */
+}
+
+.featured-game-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items if there's not enough space */
+    justify-content: space-between; /* Evenly distribute the space between items */
+    gap: 20px; /* Space between items */
+}
+
+.featured-game-item {
+    text-align: center; /* Center align text below images */
+    flex: 1 1 12%; /* Allows items to be responsive, adjust the width as needed */
+    max-width: 120px; /* Optional: restrict the max width of each item */
+}
+
+.featured-game-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.featured-game-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.additional-news .game-item {
+    flex: 1 1 auto; /* Ensure these items do not get restricted by previous flex settings */
+    max-width: none; /* Remove max width restriction */
+}
+
 .main-news h2, .side-news h2 {
     margin-top: 0;
     padding-top: 10px;
@@ -125,20 +158,48 @@ body {
 .news-slider {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden;  /* 防止在滑动时显示多张图片 */
     margin-top: 5px;
+    height: 500px; /* 设置一个固定高度 */
 }
 
 .slides-container {
     display: flex;
-    transition: transform 0.5s ease;
-    width: 100%;
+    transition: transform 0.5s ease;  /* 平滑滑动效果 */
+    width: 100%;  /* 假设有三张图片，总宽度为300% */
+}
+
+.slide {
+    position: relative;
+    width: 100%;  /* 每个滑块宽度设置为视口宽度，确保一次只显示一个 */
+    flex-shrink: 0;  /* 防止flex容器缩放slide */
+    display: flex;
+    flex-direction: column;
+    justify-content: cover;
+    align-items: center;
 }
 
 .slides-container img {
     width: 100%;
-    height: 500px; /* Adjusted height */
-    object-fit: cover; /* Ensures that aspect ratio is maintained */
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.slides-container img:hover {
+    transform: scale(1.1); /* 图片在hover时放大 */
 }
 
 .prev, .next {
@@ -201,6 +262,7 @@ body {
     color: black;
     padding: 5px;
     text-align: center;
+    font-weight: bold;
 }
 
 .additional-news {
@@ -275,5 +337,3 @@ body {
 .footer-nav a:hover {
     color: #e51636;
 }
-
-
