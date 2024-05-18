@@ -1,2 +1,0 @@
-# My Event Website
- DECO7140 EXERCISE1
