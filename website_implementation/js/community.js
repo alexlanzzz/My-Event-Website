@@ -1,13 +1,13 @@
 const baseURL = "https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/gamepromo/";
 const eventForm = document.getElementById("gamePromoForm");
 const postGamePromoMethod = 'POST';
-const completeText = document.getElementById("submitBtn"); 
+const completeText = document.getElementById("completeText"); 
 const submissionDetails = document.getElementById("submissionDetails"); 
 
 const handleFormSubmit = event => {
     event.preventDefault();
     let formData = new FormData(event.target);
-    formData.append("website_code", "test");
+
 
     const requestOptions = {
         method: postGamePromoMethod,
@@ -23,12 +23,22 @@ const handleFormSubmit = event => {
             }
             return data;
         }))
+
         .then(data => {
             console.log(data);
             eventForm.reset();
-            completeText.innerHTML = "Submitted!";
+            alert("Submission Successfully!")
+            completeText.innerHTML = "Submission Successfully!";
+            submissionDetails.innerHTML = 
+            `<div class="submission-detail-item">
+            <h4>Name: ${data.name}</h4>
+            <p>Game Name: ${data.game_name}</p>
+            <p>Genre: ${data.genre}</p>
+            <p>Description: ${data.description}</p>
+            ${data.sub_genre ? `<p>Sub Genre: ${data.sub_genre}</p>` : ''}
+            ${data.message ? `<p>Message: ${data.message}</p>` : ''}
+        </div>`;
 
-            submissionDetails.innerHTML = `Submission Details: <br> Name: ${data.name}, Game Name: ${data.game_name}`;
         })
         .catch(error => {
             console.error("error:", error.message);

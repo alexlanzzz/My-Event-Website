@@ -115,9 +115,9 @@ body {
 }
 
 .featured-section h2 {
-    font-size: 2rem; /* 示例大小，您可以根据需要调整 */
-    color: #333; /* 可以调整颜色 */
-    font-weight: bold; /* 加粗字体 */
+    font-size: 2rem; 
+    color: #333; 
+    font-weight: bold; 
 }
 
 .featured-game-gallery {
@@ -160,21 +160,21 @@ body {
 .news-slider {
     position: relative;
     width: 100%;
-    overflow: hidden;  /* 防止在滑动时显示多张图片 */
+    overflow: hidden; 
     margin-top: 5px;
-    height: 500px; /* 设置一个固定高度 */
+    height: 500px;
 }
 
 .slides-container {
     display: flex;
-    transition: transform 0.5s ease;  /* 平滑滑动效果 */
-    width: 100%;  /* 假设有三张图片，总宽度为300% */
+    transition: transform 0.5s ease;  
+    width: 100%;  
 }
 
 .slide {
     position: relative;
-    width: 100%;  /* 每个滑块宽度设置为视口宽度，确保一次只显示一个 */
-    flex-shrink: 0;  /* 防止flex容器缩放slide */
+    width: 100%; 
+    flex-shrink: 0;  
     display: flex;
     flex-direction: column;
     justify-content: cover;

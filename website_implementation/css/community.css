@@ -24,71 +24,104 @@ body {
 }
 
 .game-showcase-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 .game {
-    flex: 1 1 300px;
-    margin: 10px;
     background-color: #fff;
-    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.game:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .game img {
     width: 100%;
     height: auto;
-    border-radius: 4px;
+    display: block;
 }
 
-.game h3, .game p {
-    margin-top: 10px;
+.game h3 {
+    padding: 15px;
 }
+
+.game p {
+    padding: 0 15px 15px;
+}
+
 .discussion-area {
-    background-color: #fff;
+    margin-top: 40px;
     padding: 20px;
+    background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-}
-
-.discussion-area h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .form-group {
-    margin-bottom: 10px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .form-group input[type="text"],
 .form-group input[type="file"],
 .form-group textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#submitBtn { 
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.form-group input[type="submit"] {
-    background-color: #e51636;
+    padding: 20px;
+    background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    font-size: 1.2rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
-    display: block;
-    width: auto;
+    transition: background-color 0.3s;
 }
 
-.form-group input[type="submit"]:hover {
-    background-color: #c4122d;
+#submitBtn:hover {
+    background-color: #45a049;
 }
+
+.submission-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 响应式布局 */
+    gap: 20px; /* 卡片之间的间隔 */
+    margin-top: 20px; /* 与上方内容的间隔 */
+    padding: 20px; /* 内部填充 */
+    background-color: #f9f9f9; /* 背景颜色 */
+    border-radius: 10px; /* 边角圆滑 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 盒子阴影，增加立体感 */
+}
+
+.submission-detail-item {
+    background-color: white; /* 卡片背景颜色 */
+    border: 1px solid #ddd; /* 边框 */
+    border-radius: 8px; /* 边角圆滑 */
+    padding: 15px; /* 卡片内部填充 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* 卡片阴影 */
+}
+
+.submission-detail-item h4 {
+    margin-top: 0; /* 标题顶部边距 */
+    color: #333; /* 标题颜色 */
+    font-size: 1.4rem; /* 标题字体大小 */
+}
+
+.submission-detail-item p {
+    color: #666; /* 段落文字颜色 */
+    font-size: 0.9rem; /* 段落字体大小 */
+    margin: 5px 0;
+    font-size: 1.2rem; /* 段落间距 */
+}
+
