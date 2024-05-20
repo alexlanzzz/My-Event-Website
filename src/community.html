@@ -1,27 +1,24 @@
-<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community - Game News</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/community.css">
+    <link rel="stylesheet" href="website_implementation/css/styles.css">
+    <link rel="stylesheet" href="website_implementation/css/community.css">
 </head>
 <body>
     <div class="header">
         <div class="logo">
             <a href="homepage.html">
-                <img src="images/logo.jpg" alt="RogEsports.com">
+                <img src="website_implementation/media/logo.jpg" alt="RogEsports.com">
                 <div class="logo-text">RogEsport.com</div>
             </a>
         </div>
         <div class="nav-wrapper">
             <div class="nav">
                 <a href="homepage.html">Home</a>
-                <a href="showcase.html">Game Showcase</a>
                 <a href="community.html">Community</a>
-                <a href="gallery.html">Articles Gallery</a>
                 <a href="about.html">About Us</a>
                 <a href="register.html">Register</a>
                 <a href="login.html">Login</a>
@@ -30,28 +27,76 @@
     </div>
     <div class="navbar">
         <div class="navbar-wrapper">
-            <a href="#">League of Legends</a>
-            <a href="#">CS:GO</a>
+            <a href="League of legend.html">League of Legends</a>
+            <a href="csgo.html">CS:GO</a>
             <a href="#">DOTA 2</a>
             <a href="#">Call of Duty</a>
             <a href="#">VALORANT</a>
         </div>
     </div>
     <main class="content" role="main">
+        <!-- Game Showcase Section -->
+        <section class="game-showcase" aria-labelledby="game-showcase-heading">
+            <h2 id="game-showcase-heading">Game Showcase</h2>
+            <div class="game-showcase-container">
+                <div class="game">
+                    <img src="website_implementation/media/indie game.png" alt="Game 1">
+                    <h3>Tacoma (video game)</h3>
+                    <p>Celeste is a 2018 platform game developed and published by indie studio Maddy Makes Games.</p>
+                </div>
+                <div class="game">
+                    <img src="website_implementation/media/Celeste_box_art_full.png" alt="Game 2">
+                    <h3>Celeste (video game)</h3>
+                    <p>Tacoma is an adventure video game by Fullbright released on Microsoft Windows, macOS, Linux, and Xbox One in August 2017, on PlayStation 4 in May 2018, and on Amazon Luna in October 2020. The game received generally positive reviews upon release but it sold fewer copies than Gone Home, Fullbright's first game.</p>
+                </div>
+            </div>
+        </section>
+
         <section class="discussion-area" aria-labelledby="discussion-heading">
-            <h2 id="discussion-heading">Discussion Area</h2>
-            <img src="images/discussionlogo.png" alt="Discussion Area Image" class="discussion-image">
-            <form id="discussionForm">
-                <label for="discussionTopic">Topic:</label>
-                <input type="text" id="discussionTopic" name="discussionTopic" required>
-                <label for="discussionContent">Content:</label>
-                <textarea id="discussionContent" name="discussionContent" required></textarea>
-                <label for="discussionImage">Upload Image:</label>
-                <input type="file" id="discussionImage" name="discussionImage" accept="image/*">
-                <button type="submit">Post</button>
+            <h2 id="discussion-heading">Game Submission</h2>
+            <img src="website_implementation/media/submission.png" alt="Game Submission" class="discussion-image">
+            <form id="gamePromoForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="game_name">Game Name:</label>
+                    <input type="text" id="game_name" name="game_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="genre" name="genre" required>
+                </div>
+                <div class="form-group">
+                    <label for="sub_genre">Sub Genre (optional):</label>
+                    <input type="text" id="sub_genre" name="sub_genre">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message (optional):</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="game_image">Upload Image (optional, <10MB):</label>
+                    <input type="file" id="game_image" name="game_image" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="website_code">Website Code:</label>
+                    <input type="text" id="website_code" name="website_code" required>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Submit" id="submitBtn">
+
             </form>
+
+            <div id="completeText" class="alert"></div>
+            <div id="submissionDetails" class="submission-details"></div>
             <div id="postsContainer"></div>
         </section>
+        
     </main>
     <footer class="footer" role="contentinfo">
         <div class="footer-logo">RogEsports.com</div>
@@ -64,76 +109,6 @@
             </ul>
         </nav>
     </footer>
-    <script src="js/community.js"></script>
+    <script src="website_implementation/js/community.js"></script>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community - Game News</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/community.css">
-</head>
-<body>
-    <div class="header">
-        <div class="logo">
-            <a href="homepage.html">
-                <img src="images/logo.jpg" alt="RogEsports.com">
-                <div class="logo-text">RogEsport.com</div>
-            </a>
-        </div>
-        <div class="nav-wrapper">
-            <div class="nav">
-                <a href="homepage.html">Home</a>
-                <a href="showcase.html">Game Showcase</a>
-                <a href="community.html">Community</a>
-                <a href="gallery.html">Articles Gallery</a>
-                <a href="about.html">About Us</a>
-                <a href="register.html">Register</a>
-                <a href="login.html">Login</a>
-            </div>
-        </div>
-    </div>
-    <div class="navbar">
-        <div class="navbar-wrapper">
-            <a href="#">League of Legends</a>
-            <a href="#">CS:GO</a>
-            <a href="#">DOTA 2</a>
-            <a href="#">Call of Duty</a>
-            <a href="#">VALORANT</a>
-        </div>
-    </div>
-    <main class="content" role="main">
-        <section class="discussion-area" aria-labelledby="discussion-heading">
-            <h2 id="discussion-heading">Discussion Area</h2>
-            <img src="images/discussionlogo.png" alt="Discussion Area Image" class="discussion-image">
-            <form id="discussionForm">
-                <label for="discussionTopic">Topic:</label>
-                <input type="text" id="discussionTopic" name="discussionTopic" required>
-                <label for="discussionContent">Content:</label>
-                <textarea id="discussionContent" name="discussionContent" required></textarea>
-                <label for="discussionImage">Upload Image:</label>
-                <input type="file" id="discussionImage" name="discussionImage" accept="image/*">
-                <button type="submit">Post</button>
-            </form>
-            <div id="postsContainer"></div>
-        </section>
-    </main>
-    <footer class="footer" role="contentinfo">
-        <div class="footer-logo">RogEsports.com</div>
-        <nav class="footer-nav" aria-label="Footer Navigation">
-            <ul>
-                <li><a href="#">Follow us</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-        </nav>
-    </footer>
-    <script src="js/community.js"></script>
-</body>
-</html>
->>>>>>> Stashed changes

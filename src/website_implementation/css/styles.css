@@ -1,0 +1,343 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar {
+    margin-bottom: 10px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Reduced from 120px */
+}
+
+.navbar-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    max-width: 1200px; 
+    margin: 40px auto 20px auto;
+    padding: 0 20px; 
+    align-items: start;
+}
+
+.main-news, .side-news {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.featured-section {
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+    margin: 40px 0;
+    grid-column: 1 / -1; /* Ensure full width */
+}
+
+.featured-section h2 {
+    font-size: 2rem; /* 示例大小，您可以根据需要调整 */
+    color: #333; /* 可以调整颜色 */
+    font-weight: bold; /* 加粗字体 */
+}
+
+.featured-game-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items if there's not enough space */
+    justify-content: space-between; /* Evenly distribute the space between items */
+    gap: 20px; /* Space between items */
+}
+
+.featured-game-item {
+    text-align: center; /* Center align text below images */
+    flex: 1 1 12%; /* Allows items to be responsive, adjust the width as needed */
+    max-width: 120px; /* Optional: restrict the max width of each item */
+    text-decoration: none;
+    color: inherit;
+}
+
+.featured-game-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.featured-game-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.additional-news .game-item {
+    flex: 1 1 auto; /* Ensure these items do not get restricted by previous flex settings */
+    max-width: none; /* Remove max width restriction */
+}
+
+.main-news h2, .side-news h2 {
+    margin-top: 0;
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+
+.news-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;  /* 防止在滑动时显示多张图片 */
+    margin-top: 5px;
+    height: 500px; /* 设置一个固定高度 */
+}
+
+.slides-container {
+    display: flex;
+    transition: transform 0.5s ease;  /* 平滑滑动效果 */
+    width: 100%;  /* 假设有三张图片，总宽度为300% */
+}
+
+.slide {
+    position: relative;
+    width: 100%;  /* 每个滑块宽度设置为视口宽度，确保一次只显示一个 */
+    flex-shrink: 0;  /* 防止flex容器缩放slide */
+    display: flex;
+    flex-direction: column;
+    justify-content: cover;
+    align-items: center;
+}
+
+.slides-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.slides-container img:hover {
+    transform: scale(1.1); 
+
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(204, 204, 204, 0.8);
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(204, 204, 204, 1);
+}
+
+.side-news {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-news-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.side-news-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-news-text {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.side-news-item .side-news-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.side-news-description {
+    color: black;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.additional-news {
+    margin-top: 20px;
+}
+
+.top-games {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.game-item {
+    flex: 1 1 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-item img {
+    width: 100%;
+    height: auto;
+}
+
+.Related-news{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.article-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.article-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-nav li {
+    margin: 0 10px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-nav a:hover {
+    color: #e51636;
+}
+
