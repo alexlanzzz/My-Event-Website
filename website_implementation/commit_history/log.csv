@@ -1,0 +1,48 @@
+﻿fda850d,alexlanzzz,Mon, 20 May 2024 16:43:12 +1000,Create .gitattributes,,
+ 1 file changed, 3 insertions(+)
+
+b528d11,alexlanzzz,Mon, 20 May 2024 16:42:15 +1000,add api function,1. add post data function
+2. add get data function
+3. add lol and csgo pages
+,
+ 67 files changed, 1287 insertions(+), 2562 deletions(-)
+
+f3632b1,alexlanzzz,Mon, 20 May 2024 16:36:31 +1000,Delete src/about.html,,
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+20aca08,alexlanzzz,Sun, 19 May 2024 01:42:29 +1000,add my website implementation,,
+ 22 files changed, 1691 insertions(+), 586 deletions(-)
+
+2ec6fc8,alexlanzzz,Sun, 19 May 2024 00:55:56 +1000,improve UI of homepage,1. add top games section
+2. change the UI of latest news and side news
+3. fix bugs of not rolling,
+ 15 files changed, 121 insertions(+), 24 deletions(-)
+
+1ae4d69,alexlanzzz,Sat, 18 May 2024 23:19:48 +1000,Add more details(details in description),1. create login and register pages
+2. add top games section
+3. add league of legend section
+4. make the logo references to homepage
+5. create community page
+6. add discussion area in community page
+7. improve the homepage UI,
+66b3eb0,alexlanzzz,Sat, 18 May 2024 23:16:12 +1000,Add more details to homepage and create new pages,,
+ 16 files changed, 521 insertions(+), 148 deletions(-)
+
+1e0d707,alexlanzzz,Wed, 15 May 2024 18:20:28 +1000,UPDATE WITH JS,,
+ 11 files changed, 586 insertions(+), 119 deletions(-)
+
+ab6fe83,alexlanzzz,Mon, 6 May 2024 21:29:55 +1000,add more details and fix bugs,,
+ 4 files changed, 170 insertions(+), 35 deletions(-)
+
+fffe4a5,alexlanzzz,Mon, 6 May 2024 19:24:32 +1000,update homepage details add logo,,
+ 2 files changed, 226 insertions(+)
+
+0bdfb03,alexlanzzz,Mon, 6 May 2024 18:58:47 +1000,add homepage instead of index html,,
+ 8 files changed, 224 insertions(+)
+
+5a2ee72,alexlanzzz,Mon, 6 May 2024 13:33:28 +1000,Basic index and css code,Basic index and css
+,
+ 5 files changed, 201 insertions(+)
+
+32fe84b,alexlanzzz,Fri, 23 Feb 2024 19:41:25 +1000,Initial commit,,
+ 1 file changed, 2 insertions(+)
