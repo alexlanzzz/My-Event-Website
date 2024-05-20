@@ -115,9 +115,9 @@ body {
 }
 
 .featured-section h2 {
-    font-size: 2rem; /* 示例大小，您可以根据需要调整 */
-    color: #333; /* 可以调整颜色 */
-    font-weight: bold; /* 加粗字体 */
+    font-size: 2rem; 
+    color: #333; 
+    font-weight: bold; 
 }
 
 .featured-game-gallery {

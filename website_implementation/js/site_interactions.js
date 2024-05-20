@@ -21,7 +21,7 @@ function showPrevSlide() {
 }
 
 function startSlideShow() {
-    slideInterval = setInterval(showNextSlide, 5000); // 自动切换间隔时间为5秒
+    slideInterval = setInterval(showNextSlide, 5000); // 5s to change pages
 }
 
 function stopSlideShow() {
