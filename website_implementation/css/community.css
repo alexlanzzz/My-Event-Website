@@ -13,10 +13,10 @@ body {
 }
 .content {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;    /*fractional unit*/
     grid-gap: 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; /*Achieving Horizontal Centring*/
 }
 .game-showcase h2 {
     text-align: center;
@@ -25,7 +25,7 @@ body {
 
 .game-showcase-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*Use CSS grid layout to auto-adapt to fill grid columns with a minimum width of 300px per column and a maximum of 1fr*/
     gap: 20px;
     padding: 20px;
 }
@@ -33,20 +33,20 @@ body {
 .game {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);/*Shadow effect to simulate 3D effect and enhance the visual hierarchy*/
     overflow: hidden;
     transition: transform 0.3s ease;
 }
 
 .game:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /*When the mouse hovers, the element moves up 5px and changes the shadow, increasing the user interaction experience*/
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .game img {
     width: 100%;
     height: auto;
-    display: block;
+    display: block; /*fill up a whole row*/
 }
 
 .game h3 {
@@ -61,7 +61,7 @@ body {
     margin-top: 40px;
     padding: 20px;
     background: #fff;
-    border-radius: 8px;
+    border-radius: 8px; /*Turning the sharp right angles of elements into softer rounded corners*/
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -85,7 +85,7 @@ body {
     font-size: 1.2rem;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
+    cursor: pointer; /*hand-shaped pointer*/
     transition: background-color 0.3s;
 }
 
@@ -95,8 +95,8 @@ body {
 
 .submission-details {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 20px; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*After all the columns have been filled, an attempt is made to merge the extra blank columns, making the layout look more compact, min=250px max=1fr*/
+    gap: 20px; /*each grid item has 20 pixels in both horizontal and vertical space*/
     margin-top: 20px; 
     padding: 20px; 
     background-color: #f9f9f9; 
@@ -120,7 +120,6 @@ body {
 
 .submission-detail-item p {
     color: #666; 
-    font-size: 0.9rem; 
     margin: 5px 0;
     font-size: 1.2rem; 
 }

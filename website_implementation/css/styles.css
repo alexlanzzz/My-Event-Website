@@ -65,7 +65,7 @@ body {
     background-color: #333;
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Reduced from 120px */
+    margin-top: 20px; 
 }
 
 .navbar-wrapper {

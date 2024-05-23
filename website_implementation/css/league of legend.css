@@ -65,7 +65,7 @@ body {
     background-color: #333;
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Reduced from 120px */
+    margin-top: 20px; 
 }
 
 .navbar-wrapper {
@@ -129,7 +129,7 @@ body {
 
 .featured-game-item {
     text-align: center; /* Center align text below images */
-    flex: 1 1 12%; /* Allows items to be responsive, adjust the width as needed */
+    flex: 1 1 12%; 
     max-width: 120px; /* Optional: restrict the max width of each item */
 }
 
