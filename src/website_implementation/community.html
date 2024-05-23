@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="css/community.css">
 </head>
 <body>
-    <div class="header">
+    <header class="header"> 
         <div class="logo">
             <a href="index.html">
-                <img src="media/logo.jpg" alt="RogEsports.com">
-                <div class="logo-text">RogEsport.com</div>
+                <img src="media/logo.jpg" alt="Logo of RogEsports.com">
+                <span class="logo-text">RogEsport.com</span> 
             </a>
         </div>
-        <div class="nav-wrapper">
+        <nav class="nav-wrapper"> 
             <div class="nav">
                 <a href="index.html">Home</a>
                 <a href="community.html">Community</a>
@@ -23,9 +23,9 @@
                 <a href="register.html">Register</a>
                 <a href="login.html">Login</a>
             </div>
-        </div>
-    </div>
-    <div class="navbar">
+        </nav>
+    </header>
+    <nav class="navbar"> 
         <div class="navbar-wrapper">
             <a href="League of legend.html">League of Legends</a>
             <a href="csgo.html">CS:GO</a>
@@ -33,30 +33,31 @@
             <a href="references.html">Call of Duty</a>
             <a href="valorant.html">VALORANT</a>
         </div>
-    </div>
-    <main class="content" role="main">
+    </nav>
+    <main class="content">
         <section class="game-showcase" aria-labelledby="game-showcase-heading">
             <h2 id="game-showcase-heading">Game Showcase</h2>
             <div class="game-showcase-container">
-                <div class="game">
-                <a href="references.html">
-                    <img src="media/indie game.png" alt="Game 1:Tacoma">
-                    <h3>Tacoma (video game)</h3>
-                    <p>Celeste is a 2018 platform game developed and published by indie studio Maddy Makes Games.</p>
-                </a>
-                </div>
-                <div class="game">
-                <a href="references.html">
-                    <img src="media/Celeste_box_art_full.png" alt="Game 2:Celeste">
-                    <h3>Celeste (video game)</h3>
-                    <p>Tacoma is an adventure video game by Fullbright released on Microsoft Windows, macOS, Linux, and Xbox One in August 2017, on PlayStation 4 in May 2018, and on Amazon Luna in October 2020. The game received generally positive reviews upon release but it sold fewer copies than Gone Home, Fullbright's first game.</p>
-                </a>
-                </div>
+                <article class="game"> 
+                    <a href="references.html">
+                        <img src="media/indie game.png" alt="Tacoma video game">
+                        <h3>Tacoma (video game)</h3>
+                        <p>Celeste is a 2018 platform game developed and published by indie studio Maddy Makes Games.</p>
+                    </a>
+                </article>
+                <article class="game">
+                    <a href="references.html">
+                        <img src="media/Celeste_box_art_full.png" alt="Celeste video game">
+                        <h3>Celeste (video game)</h3>
+                        <p>Tacoma is an adventure video game by Fullbright released on Microsoft Windows, macOS, Linux, and Xbox One in August 2017, on PlayStation 4 in May 2018, and on Amazon Luna in October 2020. The game received generally positive reviews upon release but it sold fewer copies than Gone Home, Fullbright's first game.</p>
+                    </a>
+                </article>
             </div>
         </section>
+        <div id="submissionDetails" class="submission-details">
+        </div>
         <section class="discussion-area" aria-labelledby="discussion-heading">
-            <h2 id="discussion-heading">Game Submission</h2>
-            <img src="media/submission.png" alt="Game Submission" class="discussion-image">
+            <h2 id="discussion-heading">Game Submission -- Submit your ideas!</h2>
             <form id="gamePromoForm">
                 <div class="form-group">
                     <label for="name">Name:</label>
@@ -93,7 +94,6 @@
                 <input class="btn btn-primary" type="submit" value="Submit" id="submitBtn">
             </form>
             <div id="completeText" class="alert"></div>
-            <div id="submissionDetails" class="submission-details"></div>
             <div id="postsContainer"></div>
         </section>       
     </main>
