@@ -26,7 +26,6 @@ body {
 }
 
 .logo a {
-    text-decoration: none;
     display: flex;
     align-items: center;
 }
@@ -49,7 +48,6 @@ body {
 
 .nav a {
     margin: 0 15px;
-    text-decoration: none;
     color: black;
     font-weight: bold;
     padding: 10px 15px;
@@ -82,7 +80,6 @@ body {
     color: white;
     text-align: center;
     padding: 14px 20px;
-    text-decoration: none;
     font-size: 1.1rem;
 }
 
@@ -131,7 +128,6 @@ body {
     text-align: center; /* Center align text below images */
     flex: 1 1 12%; /* Allows items to be responsive, adjust the width as needed */
     max-width: 120px; /* Optional: restrict the max width of each item */
-    text-decoration: none;
     color: inherit;
 }
 
@@ -333,7 +329,6 @@ body {
 }
 
 .footer-nav a {
-    text-decoration: none;
     color: #fff;
 }
 

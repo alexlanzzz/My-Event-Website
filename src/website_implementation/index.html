@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Game News</title>
-    <link rel="stylesheet" href="website_implementation/css/league of legend.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="header">
         <div class="logo">
-            <a href="homepage.html">
-                <img src="website_implementation/media/logo.jpg" alt="RogEsports.com">
+            <a href="index.html">
+                <img src="media/logo.jpg" alt="RogEsports.com">
                 <div class="logo-text">RogEsport.com</div>
             </a>
         </div>
         <div class="nav-wrapper">
             <div class="nav">
-                <a href="homepage.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="community.html">Community</a>
                 <a href="references.html">About Us</a>
                 <a href="register.html">Register</a>
@@ -37,16 +37,22 @@
         <section class="main-news" aria-labelledby="latest-news-heading">
             <h2 id="latest-news-heading">Latest News</h2>
             <div class="news-slider">
+                <button class="prev" aria-label="Previous News"></button>
                 <div class="slides-container">
                     <div class="slide">
-                        <a href="references.html">
-                            <img src="website_implementation/media/csgonews.png" alt="CSGONEWSLOGO">
-                        </a>
+                        <img src="media/news1.png" alt="News headline 1">
+                        <div class="text-overlay">Warzone Player finds loadout and cash in secret vault on Rebirth Island</div>
+                    </div>
+                    <div class="slide">
+                        <img src="media/news2.png" alt="News headline 2">
+                        <div class="text-overlay">Getting Guide to Freedom in Genshin Impact</div>
+                    </div>
+                    <div class="slide">
+                        <img src="media/news3.png" alt="News headline 3">
+                        <div class="text-overlay">ESL decides to ban organizations with Russian ties (but players could still be able to compete)</div>
                     </div>
                 </div>
-            </div>
-            <div class="news-description">
-                <p>How CEO Yevhen Zolotarov charts a course for NAVI through war-“It's surreal that this happens in the 21st century.</p>
+                <button class="next" aria-label="Next News"></button>
             </div>
         </section>      
         <aside class="side-news" role="complementary" aria-labelledby="side-news-heading">
@@ -54,83 +60,88 @@
             <div class="side-news-item">
                 <div class="side-news-top">
                     <a href="references.html">
-                        <img class="side-news-image" src="website_implementation/media/csgosidenews1.png" alt="CSGOVPNEWS">
+                    <div class="side-news-text">CD Projekt</div>
+                    <img class="side-news-image" src="media/cdpr.png" alt="cdpr-news">
                     </a>
                 </div>
-                <div class="side-news-description">Virtus Pro CS:GO players will compete under name 'Outsiders' in ESL Pro League</div>
+                <div class="side-news-description">CD Projekt Red announces new Witcher game is being developed</div>
             </div>
             <div class="side-news-item">
                 <div class="side-news-top">
                     <a href="references.html">
-                        <img class="side-news-image" src="website_implementation/media/csgosidenews2.png" alt="CSGOBLAST">
+                    <div class="side-news-text">Activision Blizzard</div>
+                    <img class="side-news-image" src="media/activison.png" alt="Activision Blizzard">
                     </a>
                 </div>
-                <div class="side-news-description">BLAST to exclude Russian-backed teams from tournaments</div>
+                <div class="side-news-description">New lawsuit for Activision Blizzard as female employee alleges sexual harassment</div>
             </div>
         </aside>
         <section class="featured-section">
-            <h2>Guides</h2>
+            <h2>Top Games</h2>
             <div class="featured-game-gallery">
+                <div class="featured-game-gallery">
+                    <div class="featured-game-item">
+                        <a href="League of legend.html">
+                            <img src="media/lol-logo.png" alt="League of Legends">
+                            <p>League of Legends</p>
+                        </a>
+                    </div>
+                </div>               
                 <div class="featured-game-item">
-                    <a href="references.html">
-                        <img src="website_implementation/media/csgoguide1.png" alt="Renata Glasc Guide-Runes, Items and more">
-                        <p>Renata Glasc Guide-Runes, Items and more</p>
+                    <a href="csgo.html">
+                        <img src="media/csgologo.png" alt="CS:GO">
+                        <p>CS:GO</p>
+                    </a>
+                </div>
+                <div class="featured-game-item">
+                    <a href="valorant.html">
+                        <img src="media/valorant.png" alt="VALORANT">
+                        <p>VALORANT</p>
                     </a>
                 </div>
                 <div class="featured-game-item">
                     <a href="references.html">
-                        <img src="website_implementation/media/csgonews1.png" alt="The most useful console commands in CS:GO custom matches">
-                        <p>The most useful console commands in CS:GO custom matches</p>
+                        <img src="media/dota.png" alt="DOTA 2">
+                        <p>DOTA 2</p>
                     </a>
                 </div>
                 <div class="featured-game-item">
                     <a href="references.html">
-                        <img src="website_implementation/media/csgoguide2.png" alt="CS:GO Pro Settings of s1mple, ZywOo and device">
-                        <p>CS:GO Pro Settings of s1mple, ZywOo and device</p>
+                        <img src="media/cod.png" alt="Call of Duty">
+                        <p>Call of Duty</p>
                     </a>
                 </div>
                 <div class="featured-game-item">
                     <a href="references.html">
-                        <img src="website_implementation/media/csgoguide3.png" alt="CS:GO-How to transfer your sensitivity to other games">
-                        <p>CS:GO-How to transfer your sensitivity to other games</p>
+                        <img src="media/genshin.png" alt="Genshin">
+                        <p>Genshin Impact</p>
                     </a>
                 </div>
                 <div class="featured-game-item">
                     <a href="references.html">
-                        <img src="website_implementation/media/csgoguide4.png" alt="4:3 vs. 16:9-Which resolution is better in CS:GO?">
-                        <p>4:3 vs. 16:9-Which resolution is better in CS:GO?</p>
-                    </a>
-                </div>
-                <div class="featured-game-item">
-                    <a href="references.html">
-                        <img src="website_implementation/media/csgoguide5.png" alt="CS:GO-Wallhack and other Console Commands for your Training Config">
-                        <p>CS:GO-Wallhack and other Console Commands for your Training Config</p>
+                        <img src="media/more-gamelogo.png" alt="More Gaming">
+                        <p>Everything Gaming and more...</p>
                     </a>
                 </div>
             </div>
         </section>      
         <section class="additional-news">
-            <h2>CS:GO</h2>
+            <h2>League of legend</h2>
             <div class="top-games">
                 <div class="game-item">
                     <a href="references.html">
-                        <img src="website_implementation/media/csgonews2.jpg" alt="Csgo player simple interview">
-                        <p>s1mple donating to Ukrainian military in show of solidarity</p>
+                        <img src="media/league of legend.png" alt="League of Legends">
                     </a>
         </section>
         <section class="Related-news">
             <h2>Related news</h2>
             <div class="article-item">
-                <a href="references.html">
-                    <img src="website_implementation/media/csgonews3.jpg" alt="Favorites MOUZ NXT convincingly win WePlay Academy League playoffs">
-                    <p>Favorites MOUZ NXT convincingly win WePlay Academy League playoffs</p>
-                </a>
+                <img src="media/lol1.png" alt="Article 1">
+                <p>Doublelift calls out LCS players who don't use Champions Queue to practice</p>
             </div>
             <div class="article-item">
-                <a href="references.html">
-                    <img src="website_implementation/media/csgonews4.jpg" alt ="Tarik is clear: “Between CS:GO and VALORANT, CS:GO is the harder shooter”">
-                    <p>Tarik is clear: “Between CS:GO and VALORANT, CS:GO is the harder shooter”</p>
-                </a>
+                <img src="media/lol2.png" alt ="Article 2">
+                <p>The 5 best midlaners for season 12 solo queue</p>
             </div>
         </section>
     </main>
@@ -145,6 +156,6 @@
             </ul>
         </nav>
     </footer>
-    <script src="website_implementation/js/site_interactions.js"></script>
+    <script src="js/site_interactions.js"></script>
 </body>
 </html>
